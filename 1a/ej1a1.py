@@ -40,17 +40,16 @@ Exemple:
 '''
 
 def fibonacci(fibonacci_number):
-     if fibonacci_number == 0:
-        return 0
-    elif fibonacci_number == 1:
-        return 1
-    elif type(fibonacci_number) != int:
+     if type(fibonacci_number) != int:
         raise ValueError ("Ha de ser un número enter")
     elif fibonacci_number <0:
-        raise ValueError ( "ha de ser major de zero")
+        return ValueError ( "ha de ser major de zero")
+    elif fibonacci_number == 0:
+        return 0
+    elif fibonacci_number == 1:
+        return 1      
     else:
         return fibonacci(fibonacci_number - 1) + fibonacci(fibonacci_number -2)
-    pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
