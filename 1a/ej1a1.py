@@ -40,7 +40,7 @@ Exemple:
 '''
 
 def fibonacci(fibonacci_number):
-     if type(fibonacci_number) != int:
+    if type(fibonacci_number) != int:
         raise ValueError ("Ha de ser un número enter")
     elif fibonacci_number <0:
         raise ValueError ( "ha de ser major de zero")
