@@ -36,8 +36,12 @@ Exemple
 
 
 def invert_list(lst):
-    # Write here your code
-    pass
+    # Cas base
+    if len(lst) == 0:
+        return []
+    # Retorna la llista invertida recursivament
+    return invert_list(lst[1:]) + [lst[0]]
+
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
