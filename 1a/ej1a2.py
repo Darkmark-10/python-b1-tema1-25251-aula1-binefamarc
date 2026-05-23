@@ -42,8 +42,14 @@ Exemple:
 '''
 
 def sum_odd_numbers(list_numbers):
-    # Write here your code
-    pass
+   total = 0
+    for number in list_numbers:
+        if type(number) != int or number < 0:
+            return ValueError("MISSATGE D'ERROR")
+        else:
+            if number %2 !=0:
+                total = total+number
+    return total
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
