@@ -43,7 +43,7 @@ def fibonacci(fibonacci_number):
      if type(fibonacci_number) != int:
         raise ValueError ("Ha de ser un número enter")
     elif fibonacci_number <0:
-        return ValueError ( "ha de ser major de zero")
+        raise ValueError ( "ha de ser major de zero")
     elif fibonacci_number == 0:
         return 0
     elif fibonacci_number == 1:
