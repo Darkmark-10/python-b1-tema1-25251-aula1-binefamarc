@@ -65,8 +65,9 @@ Exemple:
 import numpy as np
 
 def results(list_numbers):
-    # Write here your code
-    pass
+   Average = np.mean(list_numbers)
+    std = np.std(list_numbers)
+    return print("Average: ", round(Average, 2),"\nStandard deviation: ", round(std,2)) 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
