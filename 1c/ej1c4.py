@@ -41,8 +41,16 @@ Exemple:
 
 
 def is_palindrome(word):
-    # Write here your code
-    pass
+   # Cas base: si la paraula té 0 o 1 caràcter
+    if len(word) <= 1:
+        return True
+
+    # Si el primer i l'últim caràcter són diferents
+    if word[0] != word[-1]:
+        return False
+
+    # Crida recursiva amb la paraula sense el primer i últim caràcter
+    return is_palindrome(word[1:-1])
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
